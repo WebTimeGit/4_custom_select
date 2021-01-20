@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Custom select</title>
+
+<!--   Шрифты -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+   <!--CSS нативный select-->
+   <link rel="stylesheet" href="css/vanilla-js-select.css">
+   <!--CSS библиотека jQ-->
+   <link rel="stylesheet" href="css/jQ-select.css">
+<!--   CSS кастомный -->
+   <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<!--Select default-->
+   <div class="selectWr">
+      <label for="default">
+         <select name="default" id="default">
+            <optgroup label="Default group">
+               <option value="1" selected>Dollar</option>
+               <option value="2">Bitcoin</option>
+            </optgroup>
+            <option value="3">Ethereum</option>
+            <option value="4">Litecoin</option>
+            <option value="5">Tether</option>
+         </select>
+      </label>
+   </div>
+
+   <!--Select vanilla js-->
+   <div class="selectWr">
+      <label for="custom">
+         <select name="custom" id="custom">
+            <optgroup label="Real currency">
+               <option value="1">Dollar</option>
+            </optgroup>
+            <optgroup label="Crypto currency">
+               <option value="2">Bitcoin</option>
+               <option value="3" selected>Ethereum</option>
+               <option value="4">Litecoin</option>
+               <option value="5">Tether</option>
+            </optgroup>
+         </select>
+      </label>
+   </div>
+
+<!--Select jQuery library-->
+   <div class="selectWr">
+      <label for="custom2">
+         <select name="custom2" id="custom2">
+            <optgroup label="jQ group">
+               <option value="1" data-imagesrc="images/1.png">Dollar</option>
+            </optgroup>
+            <option value="2" data-imagesrc="images/2.png" selected>Bitcoin</option>
+            <option value="3" data-imagesrc="images/3.png">Ethereum</option>
+            <option value="4" data-imagesrc="images/4.png">Litecoin</option>
+            <option value="5" data-imagesrc="images/5.png">Tether</option>
+         </select>
+      </label>
+   </div>
+</div>
+
+
+<!--Select vanilla js-->
+<script src="js/vanilla-js-select.min.js"></script>
+<!--<script src="js/vanilla-js-select.js"></script>-->
+
+<!--Select jQuery library-->
+<script src="js/jQuery.min.3.5.1.js"></script>
+
+<!--select реализован jQ-->
+<script src="js/select.min.js"></script>
+<!--<script src="js/select.js"></script>-->
+
+<!--кастомный скрипт файл-->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
