@@ -18,7 +18,8 @@
     align-items: center;
     padding: 0 10px;
     font-weight: bold;
-    background: #a5a5a5;
+    background: #1D2E40;
+    color: #fff;
     height: 50px;
 }
 
@@ -33,12 +34,12 @@
 
 .dd-pointer-down {
     border: solid 5px transparent;
-    border-top: solid 5px #000;
+    border-top: solid 5px #fff;
 }
 
 .dd-pointer-up {
     border: solid 5px transparent;
-    border-bottom: solid 5px #000;
+    border-bottom: solid 5px #fff;
     margin-top: -8px;
 }
 
@@ -53,7 +54,7 @@
     z-index: 2000;
     margin: 0;
     padding: 0;
-    background: #a5a5a5;
+    background: #1D2E40;
     overflow: auto;
 }
 
@@ -66,7 +67,7 @@
     border-bottom: solid 1px #ddd;
     overflow: hidden;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     cursor: pointer;
     transition: all 0.25s ease-in-out;
     position: relative;
